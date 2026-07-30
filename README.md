@@ -1,4 +1,4 @@
-
+https://github.com/shivajeetyadav289-wq/RNA-seq-A549-Hydrocortisone-DEG-Analysis/blob/4610f5df9b7762171bc6b1fe67df6d0ee8d8719c/github_banner.png
 # 🧬 RNA-seq Analysis of Hydrocortisone-Treated A549 Lung Cancer Cells
 
 > End-to-end RNA-seq differential expression analysis using Linux, HISAT2, featureCounts, DESeq2, and R.
