@@ -142,7 +142,7 @@ docs/
 PCA was used to evaluate clustering of biological replicates.
 
 <p align="center">
-<img src="" width="70%">
+<img src="https://github.com/shivajeetyadav289-wq/RNA-seq-A549-Hydrocortisone-DEG-Analysis/blob/b7bb5d15cd0206f994a7c3e2a0c27bf5d798dc88/PCA.png" width="70%">
 </p>
 
 ### Volcano Plot
@@ -230,6 +230,6 @@ M.Sc. Biotechnology
 
 Bioinformatics | Transcriptomics | RNA-seq | Computational Biology
 
-GitHub: *(Add your GitHub profile link)*
+GitHub: https://github.com/shivajeetyadav289-wq/RNA-seq-A549-Hydrocortisone-DEG-Analysis.git
 
-LinkedIn: *(Add your LinkedIn profile link)*
+LinkedIn: www.linkedin.com/in/shivajeet-yadav-a25101405
