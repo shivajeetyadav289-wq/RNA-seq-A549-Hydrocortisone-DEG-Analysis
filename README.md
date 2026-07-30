@@ -1,4 +1,6 @@
-https://github.com/shivajeetyadav289-wq/RNA-seq-A549-Hydrocortisone-DEG-Analysis/blob/4610f5df9b7762171bc6b1fe67df6d0ee8d8719c/github_banner.png
+<p align="center">
+  <img src="https://github.com/shivajeetyadav289-wq/RNA-seq-A549-Hydrocortisone-DEG-Analysis/blob/2c4f6eec6bc448225536753d960043cf285ae295/github_banner.png" width="100%">
+</p>
 # 🧬 RNA-seq Analysis of Hydrocortisone-Treated A549 Lung Cancer Cells
 
 > End-to-end RNA-seq differential expression analysis using Linux, HISAT2, featureCounts, DESeq2, and R.
@@ -44,7 +46,9 @@ The analysis includes:
 ---
 
 ## 🔬 RNA-seq Workflow
-
+<p align="center">
+<img src="https://github.com/shivajeetyadav289-wq/RNA-seq-A549-Hydrocortisone-DEG-Analysis/blob/2c4f6eec6bc448225536753d960043cf285ae295/rnaseq_workfolw.png" width="90%">
+</p>
 Raw FASTQ
 
 ↓
@@ -82,7 +86,11 @@ Biological Interpretation
 ---
 
 ## 📁 Repository Structure
+## Repository Structure
 
+<p align="center">
+<img src="" width="70%">
+</p>
 ```text
 data/
 scripts/
@@ -129,6 +137,30 @@ docs/
 ✔ Differential Expression Analysis
 
 ✔ Functional Annotation
+### Principal Component Analysis (PCA)
+
+PCA was used to evaluate clustering of biological replicates.
+
+<p align="center">
+<img src="" width="70%">
+</p>
+
+### Volcano Plot
+
+Volcano plot showing differentially expressed genes.
+
+<p align="center">
+<img src="https://github.com/shivajeetyadav289-wq/RNA-seq-A549-Hydrocortisone-DEG-Analysis/blob/2c4f6eec6bc448225536753d960043cf285ae295/volcano_plot2.png" width="70%">
+</p>
+
+MA Plot
+### MA Plot
+
+MA plot showing expression changes across all genes.
+
+<p align="center">
+<img src="https://github.com/shivajeetyadav289-wq/RNA-seq-A549-Hydrocortisone-DEG-Analysis/blob/2c4f6eec6bc448225536753d960043cf285ae295/volcano_plot1.png" width="70%">
+</p>
 
 ---
 
@@ -144,17 +176,13 @@ RN7SL1 is a non-coding RNA associated with:
 - RNA Transport
 
 ---
+## Key Biological Finding
 
-## 📈 Figures
+RN7SL1 was identified as the significant differentially expressed gene in this dataset.
 
-Project includes:
-
-- PCA Plot
-- Volcano Plot
-- MA Plot
-- RNA-seq Workflow
-
----
+<p align="center">
+<img src="" width="90%">
+</p>
 
 ## 💻 Skills Demonstrated
 
