@@ -1,0 +1,53 @@
+# ======================================================
+# RNA-seq Project
+# Step 1: Quality Control using FastQC
+# Author: Shivajeet Yadav
+# ======================================================
+
+mkdir -p ../results/fastqc
+
+fastqc \
+../data/raw/*.fastq.gz \
+-o ../results/fastqc
+
+echo "FastQC completed successfully."
+
+# ======================================================
+# Step 2: Genome Alignment using HISAT2
+# ======================================================
+
+mkdir -p ../results/alignment
+
+hisat2 \
+-x ../reference/genome_index \
+-1 ../data/raw/sample_R1.fastq.gz \
+-2 ../data/raw/sample_R2.fastq.gz \
+-S ../results/alignment/sample.sam
+
+echo "Alignment completed."
+
+# ======================================================
+# Step 3: SAM/BAM Processing
+# ======================================================
+
+samtools view \
+-bS sample.sam > sample.bam
+
+samtools sort \
+sample.bam \
+-o sample.sorted.bam
+
+samtools index sample.sorted.bam
+
+echo "BAM processing completed."
+
+# ======================================================
+# Step 4: Read Quantification
+# ======================================================
+
+featureCounts \
+-a ../reference/annotation.gtf \
+-o counts.txt \
+*.sorted.bam
+
+echo "Read counting completed."
