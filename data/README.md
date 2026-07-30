@@ -35,4 +35,4 @@ Identification of Differentially Expressed Genes in A549 Cells Following Hydroco
 4. featureCounts
 5. DESeq2 Differential Expression
 6. Gene Annotation
-7. Visualization (PCA, MA Plot, Volcano Plot, Heatmap)
+7. Visualization (PCA, MA Plot, Volcano Plot)
