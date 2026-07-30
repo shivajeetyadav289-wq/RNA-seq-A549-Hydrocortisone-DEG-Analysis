@@ -28,25 +28,29 @@ write.csv(
 
 #########################################################
 # Gene Annotation
-#########################################################
-
 library(org.Hs.eg.db)
 library(AnnotationDbi)
 
-genes <- read.csv(
-  "../results/deseq2_results.csv"
-)
+genes <- read.csv("DESeq2_results.csv")
 
 annotation <- AnnotationDbi::select(
     org.Hs.eg.db,
-    keys = genes$gene,
-    columns = c("SYMBOL","GENENAME"),
+    keys = as.character(genes$X),
+    columns = c("SYMBOL", "GENENAME"),
     keytype = "ENSEMBL"
 )
 
-write.csv(
+final_results <- merge(
+    genes,
     annotation,
-    "../results/annotation.csv",
+    by.x = "X",
+    by.y = "ENSEMBL",
+    all.x = TRUE
+)
+
+write.csv(
+    final_results,
+    "DESeq2_results_annotated.csv",
     row.names = FALSE
 )
 
